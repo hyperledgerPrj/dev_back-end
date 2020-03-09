@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>회원가입</title>
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-    <link rel="stylesheet" href="assets/css/modules.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.min.css" />
+    <link rel="stylesheet" href="../public/css/modules.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <style>
       body {text-align: center;}
       input {height: 40px;}
@@ -47,7 +47,7 @@ START MODULE AREA 1: Header 3
       </div>
       <div class="MOD_HEADER3_Contact">
         <p class="MOD_HEADER3_Tel"></p>
-        <a href="Signin.html" class="btn"> 회원가입 </a>
+        <a href="SignUp.html" class="btn"> 회원가입 </a>
         <a href="Login.html" class="btn"> 로그인 </a>
       </div>
     </div>
@@ -70,20 +70,15 @@ START MODULE AREA 1: Header 3
     </section>
     <table>
       <td>
-        <input id="id" placeholder="ID" class="a" />
+        <input id="id" placeholder="UsernameID" class="a" />
       </td>
       <td><button id="id_check" class="a">중복 확인</button></td>
       </tr>
-      <tr>
-        <td>
-          <input type="password" id="password" placeholder="Password"/>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="password" id="repassword" placeholder="Repassword"/>
-        </td>
-      </tr>
+            <tr>
+              <td>
+                <input id="name" placeholder="name" />
+              </td>
+            </tr>
       <tr>
         <td>
           <input id="email" placeholder="E-Mail"/>
@@ -94,15 +89,25 @@ START MODULE AREA 1: Header 3
           <input id="aff" placeholder="Affiliation"/>
         </td>
       </tr>
+            <tr>
+              <td>
+                <input type="password" id="password" placeholder="Password at least 8 charset" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="password" id="repassword" placeholder="Password confirmation" />
+              </td>
+            </tr>
     </table><br><br>
-    <a href="Login.html" class="btn" onclick="signin()">회원가입</a></button>
+    <a href="Login.html" class="btn" onclick="signup()">회원가입</a></button>
           <br />
         </div>
       </div>
     </section>
  
     <script>
-      function signin() {
+      function signup() {
         alert("가입되었습니다");
       }
       function myFunction() {
@@ -110,7 +115,7 @@ START MODULE AREA 1: Header 3
       }
       </script>
     
-<script src="assets/js/index.js"></script>
+<script src="../public/js/frontIndex.js"></script>
     <div id=bitwise-footer style=text-align:center;margin-top:3em;padding:1em;color:#aaaaaa;font-size:0.75em;font-style:italic;>Hosted by the team <a href=http://www.bitwise.io/ target=_blank>K-Shield</a></div>
   </body>
   </center>

@@ -6,11 +6,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title style="text-align: center;">판매업체등록</title>
+    <title style="text-align: center;">유통업체등록</title>
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-    <link rel="stylesheet" href="assets/css/modules.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.min.css" />
+    <link rel="stylesheet" href="../public/css/modules.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <style>
     body {text-align: center;}a{text-decoration: none;}
     
@@ -35,9 +35,9 @@
                 <li>
                   <a href="Register.html" class="m">Agents Register<i class="ti-angle-down"></i></a>
                   <ul class="submenu">
-                    <li><a href="Prod.html">생산업체등록</a></li>
-                    <li><a href="Sell.html">판매업체등록</a></li>
-                    <li><a href="Dist.html">유통업체등록</a></li>
+                    <li><a href="registerManufacturers.html">생산업체등록</a></li>
+                    <li><a href="registerSeller.html">판매업체등록</a></li>
+                    <li><a href="registervender.html">유통업체등록</a></li>
                   </ul>
                 </li>
               </ul></nav>
@@ -55,7 +55,7 @@
     <section>
       <div data-layout="_r">
         <div data-layout="al16"><br>
-          <h1 style="text-align: center;">판매업체등록</h1><br>
+          <h1 style="text-align: center;">유통업체등록</h1><br>
         </div>
       </div>
       <table>
@@ -64,7 +64,7 @@
           업체명
         </td>
         <td>
-          <input id="01"/>
+          <input id="1"/>
         </td>
         </tr>
         <tr>
@@ -72,34 +72,57 @@
             업체대표
           </td>
           <td>
-            <input id="02"/>
+            <input id="2"/>
           </td>
         </tr>
         <tr>
           <td>
-            판매단가
+            당일생산량
           </td>
           <td>
-            <input id="03"/>
+            <input id="3"/>
           </td>
         </tr>
         <tr>
           <td>
-            판매수량
+            수출량
           </td>
           <td>
-            <input id="04"/>
+            <input id="4"/>
           </td>
         </tr>
         <tr>
           <td>
-            판매처
+            국내출고량
           </td>
           <td>
-            <input id="05"/>
+            <input id="5"/>
           </td>
         </tr>
-        
+        <tr>
+          <td>
+            재고량
+          </td>
+          <td>
+            <input id="6"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            단가
+          </td>
+          <td>
+            <input id="7"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            KC 및 KF94 인증 여부
+          </td>
+          <td>
+            <input id="8"/>
+          </td>
+        </tr>
       </table><br><br>
       <a href="Main.html" class="btn" onclick="register()">등록</a></button>
             <br />
@@ -115,7 +138,7 @@
 
 
 
-    <script src="assets/js/index.js"></script>
+    <script src="../public/js/frontIndex.js"></script>
     <div id=bitwise-footer style=text-align:center;margin-top:3em;padding:1em;color:#aaaaaa;font-size:0.75em;font-style:italic;>Hosted by the team <a href=http://www.bitwise.io/ target=_blank>K-Shield</a></div>
   </body>
 </center>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+<center>
 <html lang="en">
   <!-- Start Head -->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title style="text-align: center;">We want By a Mask</title>
+    <title style="text-align: center;">판매업체등록</title>
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-    <link rel="stylesheet" href="assets/css/modules.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.min.css" />
+    <link rel="stylesheet" href="../public/css/modules.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <style>
     body {text-align: center;}a{text-decoration: none;}
     
@@ -34,9 +35,9 @@
                 <li>
                   <a href="Register.html" class="m">Agents Register<i class="ti-angle-down"></i></a>
                   <ul class="submenu">
-                    <li><a href="#">생산업체</a></li>
-                    <li><a href="#">판매업체</a></li>
-                    <li><a href="#">유통업체</a></li>
+                    <li><a href="registerManufacturers.html">생산업체등록</a></li>
+                    <li><a href="registerSeller.html">판매업체등록</a></li>
+                    <li><a href="registervender.html">유통업체등록</a></li>
                   </ul>
                 </li>
               </ul></nav>
@@ -54,32 +55,68 @@
     <section>
       <div data-layout="_r">
         <div data-layout="al16"><br>
-          <h1 style="text-align: center;">로그인</h1><br>
+          <h1 style="text-align: center;">판매업체등록</h1><br>
         </div>
       </div>
-    </section>
-    <input style="width: 200px;" placeholder="ID" /><br /><br />
-      <input
-        style="width: 200px;"
-        placeholder="Password"
-        type="password"
-      /><br /><br />
-      <a href="Main.html" class="btn" onclick="login()">
-        Login
-      </a>
-      <br /><br />
-      <button>
-        Id/Passwd 찾기
-      </button>
-          <br />
+      <table>
+        <tr>
+        <td>
+          업체명
+        </td>
+        <td>
+          <input id="01"/>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            업체대표
+          </td>
+          <td>
+            <input id="02"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            판매단가
+          </td>
+          <td>
+            <input id="03"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            판매수량
+          </td>
+          <td>
+            <input id="04"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            판매처
+          </td>
+          <td>
+            <input id="05"/>
+          </td>
+        </tr>
+        
+      </table><br><br>
+      <a href="Main.html" class="btn" onclick="register()">등록</a></button>
+            <br />
+          </div>
         </div>
-      </div>
-    </section>
-    
+      </section>
+      <script>
+        function register() {
+          alert("등록되었습니다");
+        }
+        
+        </script>
 
 
 
-    <script src="assets/js/index.js"></script>
+    <script src="../public/js/frontIndex.js"></script>
     <div id=bitwise-footer style=text-align:center;margin-top:3em;padding:1em;color:#aaaaaa;font-size:0.75em;font-style:italic;>Hosted by the team <a href=http://www.bitwise.io/ target=_blank>K-Shield</a></div>
   </body>
+</center>
 </html>

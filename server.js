@@ -1,34 +1,20 @@
-const express = require("express");
-const app = express();
-var engines = require("consolidate");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+let express = require('express');
+let app = express();
+var ejs = require('ejs');
+const session = require('express-session');
+let router = require('./router/main')(app);
 
-// router
-var indexRouter = require("./routes/main")(app);
+let port = 3000;
+let hostname = 'localhost'
 
-app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+app.use(express.static('public'));
 
-// view 경로 설정
-app.set("views", __dirname + "/views");
-
-// view engine 을 html로 설정
-app.set("view engine", "ejs");
-app.engine("html", require("ejs").renderFile);
-// app.engine("html", engines.mustache); // ejs, pug 중에 mustache 기능
-// app.set("view engine", "html");
-
-// 기본 path를 /public으로 설정(css, javascript 등의 파일 사용)
-app.use(express.static(__dirname + "/public"));
-
-// use routes
-app.use("/", indexRouter);
-
-// var server = app.listen(3000, function() {
-//   console.log("Express server has started on prot 3000");
-// });
-
-module.exports = app;
+var server = app.listen(port, function () {
+    console.log(`
+        Server is running at http://${hostname}:${port}/ 
+        Server hostname ${hostname} is listening on port ${port}!
+    `);
+});
